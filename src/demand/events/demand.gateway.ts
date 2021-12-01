@@ -10,9 +10,13 @@ import {
   WebSocketServer,
 } from '@nestjs/websockets';
 import { Server, Socket } from 'socket.io';
+import { PORT_WEBSOCKETS } from 'src/constants';
 import { FindDemandByIdService } from '../services/find-demand-by-id/find-demand-by-id.service';
 
-@WebSocketGateway(5500, { transports: 'websockets', cors: { origin: '*' } })
+@WebSocketGateway(PORT_WEBSOCKETS, {
+  transports: 'websockets',
+  cors: { origin: '*' },
+})
 export class DemandGateway
   implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect
 {
