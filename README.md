@@ -67,10 +67,10 @@ However, some features were needed to take full advantage of the api.
 
 ## about Nestjs
 
-- Organização de código e Typescript  
-- Modularidade e Injeção de dependências
-- ORMs maduros e suporte a SQL e MongoDB
-- Similaridade com outros frameworks consagrados
+- Code Organization and Typescript 
+- Modularity and Dependency Injection
+- Mature ORMs and SQL and MongoDB support
+- Similarity to other established frameworks
 
 ## License
 
