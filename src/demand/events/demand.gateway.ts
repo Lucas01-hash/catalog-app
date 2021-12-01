@@ -12,7 +12,7 @@ import {
 import { Server, Socket } from 'socket.io';
 import { FindDemandByIdService } from '../services/find-demand-by-id/find-demand-by-id.service';
 
-@WebSocketGateway(3001, { transports: 'websockets', cors: { origin: '*' } })
+@WebSocketGateway(5500, { transports: 'websockets', cors: { origin: '*' } })
 export class DemandGateway
   implements OnGatewayInit, OnGatewayConnection, OnGatewayDisconnect
 {
@@ -24,7 +24,7 @@ export class DemandGateway
   @SubscribeMessage('demand')
   handleMessage(@ConnectedSocket() client: Socket, @MessageBody() id: string) {
     const demand = this.findDemandByIdService.findById(id);
-    this.server.emit('demand', demand, client.id);
+    this.server.emit('demandResponse', demand, client.id);
   }
 
   afterInit(server: any) {

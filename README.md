@@ -54,6 +54,24 @@ $ yarn start:prod
 - linkedin - [Lucas Carvalho](https://www.linkedin.com/in/lucas-carvalho-b465071b3/)
 - instagram - [@ilucaas3](https://www.instagram.com/ilucaas3/)
 
+## Observation
+- unitary tests - The development of unit tests was not implemented due to limited time. however, the entire project is prepared to receive test implementations.
+
+- Websockets - The connection with web sockets had its server configured, however the correction test was not possible due to limited time, the socket.emit and socket.on functions are not the way they should be, but to test two endpoints were developed that serve to return a query by its id and all queries by the user id.
+
+- The challenge - The application is a simple catalog of products from a store where you just have to list, add, remove
+and edit the products in the cart, allowing you to complete the order.
+However, some features were needed to take full advantage of the api.
+
+- technical knowledge - The knowledge in using the nestjs framework was acquired during the development process.
+
+## about Nestjs
+
+- Organização de código e Typescript  
+- Modularidade e Injeção de dependências
+- ORMs maduros e suporte a SQL e MongoDB
+- Similaridade com outros frameworks consagrados
+
 ## License
 
 catalog app is [UNLICENSED](LICENSE).
